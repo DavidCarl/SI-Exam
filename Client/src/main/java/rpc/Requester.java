@@ -37,7 +37,7 @@ public class Requester implements AutoCloseable {
             String response = start.call("getBrands");
 
             System.out.println(response);
-            System.out.print("please type a car brand/model or help!");
+            System.out.print("please type a car brand/model or help!\n");
             while (true) {
                 String input = scan.nextLine();
                 if(input.contains("help")){

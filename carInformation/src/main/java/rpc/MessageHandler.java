@@ -41,7 +41,7 @@ public class MessageHandler {
         String carMessage = "";
         for (Car car : cars) {
             if (car.getModel().equals(carChoice)) {
-                es.message(car.getBranch(), "A customer looked on " + carChoice);
+                es.message(car.getBranch(), "A customer looked on " + car.getBrand() + " " + car.getModel());
                 carMessage += car + "\nPlease pick a brand or model again!";
             }
         }
